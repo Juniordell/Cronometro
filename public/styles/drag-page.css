@@ -1,0 +1,123 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    background-color: rgb(255, 255, 255);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-bottom: 20px;
+
+    color: var(--main-color);
+}
+
+header p {
+    color: var(--secondary-color);
+    font-size: 18px;
+    margin: 10px 0 20px 0;
+    font-weight: 500;
+}
+
+header button {
+    height: 40px;
+    width: 80px;
+
+    border-radius: 20px;
+    border: none;
+    outline: none;
+
+    background-color: var(--main-color);
+    color: #FFF;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    transition: 0.3s;
+
+    cursor: pointer;
+}
+
+header button:hover {
+    border: 2px solid var(--main-color);
+    background-color: transparent;
+    color: var(--main-color);
+}
+
+.lists {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+
+    height: 200px;
+    width: 100%;
+}
+
+.lists .list {
+    background-color: rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    border-radius: 8px;
+
+    max-width: 350px;
+    min-height: 150px;
+
+    margin: 0 15px 0 15px;
+    padding: 8px;
+
+    transition: all .2s linear;
+}
+
+.list-item {
+    background-color: rgb(255, 164, 45);
+    
+    border-radius: 8px;
+
+    text-align: center;
+
+    margin: 4px 0;
+    padding: 15px 20px;
+}
+
+.reset {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    color: #FFF;
+    font-size: 20px;
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+    padding: 20px 50px;
+
+    cursor: default;
+
+    background-color: var(--main-color);
+
+    transition: .8s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+a:hover {
+    border: 2px solid var(--main-color);
+    background-color: transparent;
+    color: var(--main-color);
+}
+
+

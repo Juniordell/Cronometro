@@ -1,0 +1,10 @@
+@media (max-width: 750px) {
+    .lists {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list {
+        width: 500px;
+    }
+}

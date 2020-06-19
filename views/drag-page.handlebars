@@ -1,0 +1,30 @@
+<div class="container">
+    <header>
+        <h1>Drag and Drop</h1>
+        <p>Drag the numbers ultil form [3, 1, 2]</p>
+        <button onclick="check()">Check</button>
+    </header>
+
+    <div class="lists">
+        <div class="list" id="p1">
+            <div class="list-item" id="c1" draggable="true">1</div>
+        </div>
+        <div class="list" id="p2">
+            <div class="list-item" id="c2" draggable="true">2</div>
+        </div>
+        <div class="list" id="p3">
+            <div class="list-item" id="c3" draggable="true">3</div>
+        </div>
+    </div>
+    <div class="reset">
+        <a class="reset-button">
+            <span class="reset-span">Reset</span>
+            <div class="liquid"></div>
+        </a>
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="styles/drag-page.css">
+
+<script src="scripts/drag.js"></script>

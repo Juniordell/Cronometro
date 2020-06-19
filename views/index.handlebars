@@ -1,0 +1,54 @@
+<link rel="stylesheet" href="styles/page-home.css">
+
+<div class="container">
+
+    <audio id="alert" src="../public/assets/alert.mp3"></audio>
+
+    <header>
+        <span>Contador</span>
+        <button onclick="back()">Reiniciar</button>
+    </header>
+
+    <main>
+        <div class="time-left">Faltam</div>
+
+        <div class="time">
+
+            <div class="piece">
+                <h1 id="min"></h1>
+                <span>Minutos</span>
+            </div>
+
+            <div class="piece">
+                <h1 id="sec"></h1>
+                <span>Segundos</span>
+            </div>
+
+            <div class="piece">
+                <h1 id="hund"></h1>
+                <span>Centésimo</span>
+            </div>
+
+        </div>
+
+        <div class="time-out">
+
+            <h1>
+                <span>Chegou a hora<span class="ex">!!!</span></span>
+                <i class="fas fa-laugh-beam"></i>
+            </h1>
+
+        </div>
+
+    </main>
+
+    <div class="button">
+        <a class="stop" onclick="stop()">
+            <span>Parar</span>
+        </a>
+    </div>
+
+
+</div>
+
+<script src="scripts/main.js"></script>

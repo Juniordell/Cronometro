@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="styles/page-initial.css">
+
+
+<form action="/time" method="GET" class="container">
+
+    <div class="counter">
+        <h1>Contador</h1>
+    </div>
+
+    <div class="date">
+        <span>Informe a quantidade de minutos</span>
+        <input type="text" id="time" name="inputTime" placeholder="Minutes..." autocomplete="off" required>
+    </div>
+
+    <a onclick="change()">
+        <span>Iniciar</span>
+        <div class="wave"></div>
+    </a>
+
+    <div id="modal" class="modal">
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>ERRO</h2>
+            </div>
+            <div class="modal-main">
+                <p>Algo deu errado  :(  digite novamente!</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</form>
+
+
+
+<script src="scripts/initial.js"></script>
