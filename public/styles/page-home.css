@@ -10,6 +10,10 @@ html {
     margin-left: auto;
 }
 
+audio {
+    display: none;
+}
+
 header {
     display: flex;
     justify-content: space-between;

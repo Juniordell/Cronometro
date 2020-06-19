@@ -9,6 +9,22 @@
     align-items: center;
 }
 
+.drag-div {
+    position: absolute;
+    top: 50px;
+    text-align: center;
+}
+
+.go-to-drag {
+    text-decoration: none;
+    font-size: 23px;
+    color: var(--main-color);
+}
+
+.go-to-drag:hover {
+    color: var(--secondary-color);
+}
+
 .counter {
     color: var(--main-color);
     font-size: 25px;
@@ -78,7 +94,7 @@ h1::after {
     padding-left: 20px;
 }
 
-a {
+.a-wave {
     position: relative;
     display: block;
 
@@ -99,7 +115,7 @@ a {
     font-size: 25px;
 }
 
-a span {
+.a-wave span {
     position: relative;
 
     z-index: 1;
@@ -107,11 +123,11 @@ a span {
     transition: 1;
 }
 
-a:hover span {
+.a-wave:hover span {
     color: #fff;
 }
 
-a .wave {
+.a-wave .wave {
     position: absolute;
 
     top: calc(100% + 22px);
@@ -125,11 +141,11 @@ a .wave {
     transition: 1s;
 }
 
-a:hover .wave {
+.a-wave:hover .wave {
     top: 0;
 }
 
-a .wave::before {
+.a-wave .wave::before {
     content: "";
     position: absolute;
 
@@ -211,4 +227,18 @@ a .wave::before {
 
     background-color: #a12d2d;
     color: white;
+}
+
+.links {
+    padding-top: 30px;
+    width: 60px;
+
+    font-size: 25px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.links i {
+    color: var(--secondary-color);
 }
