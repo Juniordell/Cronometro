@@ -2,9 +2,60 @@
     .lists {
         flex-direction: column;
         align-items: center;
+        height: 600px;
     }
 
-    .list {
+    .lists .list {
         width: 500px;
+        margin: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    main .time-left {
+        font-size: 50px;
+    }
+
+    .time .piece h1 {
+        font-size: 80px;
+    }
+
+    .time .piece span {
+        font-size: 20px;
+    }
+
+    .stop {
+        font-size: 18px;
+        padding: 8px 25px;
+    }
+
+    header #cont {
+        font-size: 33px;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        overflow: auto;
+    }
+
+    main .time {
+        grid-template-columns: 1fr;
+    }
+
+    .time .piece h1 {
+        font-size: 110px;
+    }
+
+    .time .piece span {
+        font-size: 23px;
+    }
+
+    header #cont {
+        margin-left: 0;
+    }
+
+    .back {
+        margin-right: 20px;
     }
 }

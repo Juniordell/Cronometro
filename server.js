@@ -18,10 +18,8 @@ app.get('/', (req, res) => {
 })
 
 app.get('/time', (req, res) => {
-    console.log(req.body)
 
     res.render('index', {
-        inputTime: req.body.inputTime,
         title: 'Cronômetro'
     })
 })
