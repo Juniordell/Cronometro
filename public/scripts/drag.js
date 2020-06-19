@@ -51,6 +51,11 @@ function check() {
 
     if (p1.children[0] == c3 && p2.children[0] == c1 && p3.children[0] == c2) {
         console.log('DEU CERTO CARA!!')
+        const now = new Date().getTime()
+
+        console.log(now)
+        localStorage.setItem('now', now)
+        localStorage.setItem('inTime', 99)
         
     } else {
         console.log('Ainda não :(')

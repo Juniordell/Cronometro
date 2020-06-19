@@ -1,8 +1,7 @@
 var inputTime = Number(localStorage.getItem('inTime'))
 var now_before = Number(localStorage.getItem('now'))
-var stop_button = document.querySelector('.stop')
+var stop_button = document.querySelector('#stop')
 
-console.log(inputTime)
 var cron = (inputTime * 60 * 1000) + now_before
 
 var x = setInterval( function() {
@@ -29,10 +28,7 @@ var x = setInterval( function() {
     if (distance < 0 ) {
         var time_left = document.querySelector('.time-left')
         var time = document.querySelector('.time')
-        var timeOut = document.querySelector('.time-out')
-        var alert = document.querySelector('#alert')
 
-        alert.play()
         time_left.style.display = 'none'
         time.style.display = 'none'
         stop_button.style.display = 'none'
@@ -41,6 +37,10 @@ var x = setInterval( function() {
 })
 
 stop_button.addEventListener('click', () => clearInterval(x))
+
+window.addEventListener('storage', () => {
+    window.location.reload()   
+});
 
 function back() {
     window.location = '/'

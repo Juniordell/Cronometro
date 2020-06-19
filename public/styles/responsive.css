@@ -52,10 +52,44 @@
     }
 
     header #cont {
-        margin-left: 0;
+        margin-left: 10px;
     }
 
     .back {
-        margin-right: 20px;
+        margin-right: 10px;
+    }
+
+    .counter {
+        font-size: 1.9rem;
+        margin: 0;
+    }
+
+    .date {
+        height: 110px;
+    }
+
+    .date span {
+        font-size: 20px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .date input:focus {
+        padding: 17px 90px;
+    
+        padding-left: 20px;
+    }
+
+    .a-wave {
+        font-size: 20px;
+        margin: 20px 8px;
+    }
+
+    .lists .list {
+        max-width: 280px;
+    }
+
+    .modal-content {
+        width: auto;
     }
 }
