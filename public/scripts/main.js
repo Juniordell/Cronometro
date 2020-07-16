@@ -26,19 +26,21 @@ var x = setInterval(function () {
     hundredth < 10 ? hund.innerHTML = `0${hundredth}` : hund.innerHTML = hundredth
 
     if (distance < 0) {
+        
         var time_left = document.querySelector('.time-left')
         var time = document.querySelector('.time')
         var timeOut = document.querySelector('.time-out')
         var alert = document.querySelector('#alert')
-        var body = document.querySelector('.container')
+        var container = document.querySelector('.container')
 
         alert.play()
+
         time_left.style.display = 'none'
         time.style.display = 'none'
         stop_button.style.display = 'none'
         timeOut.style.display = 'block'
 
-        body.onload(() => {
+        container.onload(() => {
             alert.play()
 
         })
